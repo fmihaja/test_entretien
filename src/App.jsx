@@ -11,7 +11,32 @@ function App() {
             <div className="w-full h-full">
                 <div className="relative -z-2 h-screen w-screen bg-[url('/src/assets/bgImg.jpg')] bg-center bg-cover bg-no-repeat flex justify-start items-center">
                     <div className="absolute -z-1 inset-0 bg-gradient-to-br from-black/90 to-transparent"></div>
-                    <div className="h-screen w-1/15 bg-[#4097FF]/35"></div>
+                    <div className="h-screen w-1/25 bg-[#4097FF]/35 flex flex-col justify-end items-center pb-30 gap-10">
+                        <img
+                            src="/src/assets/home/navbar_fb.png"
+                            className="w-3"
+                            alt=""
+                            srcset=""
+                        />
+                        <img
+                            src="/src/assets/home/navbar_yt.png"
+                            className="w-5"
+                            alt=""
+                            srcset=""
+                        />
+                        <img
+                            src="/src/assets/home/navbar_x.png"
+                            className="w-5"
+                            alt=""
+                            srcset=""
+                        />
+                        <img
+                            src="/src/assets/home/navbar_inst.png"
+                            className="w-5"
+                            alt=""
+                            srcset=""
+                        />
+                    </div>
                     <div className="relative h-screen w-full pt-10 flex flex-col justify-between items-center">
                         {/* barre de navigation */}
                         <div className="w-[80%] h-30 border-b-2 border-b-white flex justify-between items-center">
@@ -66,8 +91,12 @@ function App() {
                                     française!
                                 </p>
                                 <div className="h-15 mt-30 ms-4 border-2 border-white rounded-full text-2xl text-white flex justify-center items-center gap-30">
-                                    <h4 className="text-lg font-bold">Réservez dès maintenant votre séjour !</h4>
-                                    <div className="w-7 h-7 border-2 border-white rounded-full  text-white text-sm font-bold flex justify-center items-center">{">"}</div>
+                                    <h4 className="text-lg font-bold">
+                                        Réservez dès maintenant votre séjour !
+                                    </h4>
+                                    <div className="w-7 h-7 border-2 border-white rounded-full  text-white text-sm font-bold flex justify-center items-center">
+                                        {">"}
+                                    </div>
                                 </div>
                             </div>
                         </div>
