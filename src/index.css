@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Toutes les autres règles CSS viennent après */
+html,
+body,
+#root {
+  height: 100%;
+  font-family: 'Mulish', sans-serif;
+}
+
+/* Reste de votre CSS... */
