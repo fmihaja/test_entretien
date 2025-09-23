@@ -100,6 +100,26 @@ function App() {
                                 </div>
                             </div>
                         </div>
+                        {/* demo img */}
+                        <div className="absolute bottom-30 right-0 h-50 w-[30%] flex items-center justify-center gap-3 pe-3">
+                            <img
+                                src="/src/assets/home/img_exemple_en_en_bas(1).png"
+                                className="w-[55%] h-auto"
+                                alt=""
+                                srcset=""
+                            />
+                            <div className="relative w-[45%]">
+                                <img
+                                    src="/src/assets/home/img_exemple_en_en_bas(2).png"
+                                    className="w-full"
+                                    alt=""
+                                    srcset=""
+                                />
+                                <div className="absolute bottom-[40%] right-5 w-7 h-7 border-2 border-white rounded-full  text-white text-sm font-bold flex justify-center items-center">
+                                    {">"}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
