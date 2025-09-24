@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+import ButtonNext from "../components/ButtonNext";
 
 function Activity() {
     return (
@@ -67,14 +69,12 @@ function Activity() {
                                 créativité se rencontrent dans un cadre
                                 enchanteur.
                             </p>
-                            <div className="w-full border-2 p-3 border-[#4097FF] mt-3 rounded-full flex justify-center items-center gap-10">
+                            <Button width="100%" borderColor={"#4097FF"}>
                                 <h4 className=" text-[#4097FF] text-xs font-bold">
                                     Consulter la liste des meilleurs restaurants
                                 </h4>
-                                <div className="w-7 h-7 border-2 border-[#4097FF] text-[#4097FF] rounded-full  text-xs font-bold flex justify-center items-center">
-                                    {">"}
-                                </div>
-                            </div>
+                                <ButtonNext size={7} color={"#4097FF"} />
+                            </Button>
                         </div>
                     </div>
                     <div className="w-[31%]  h-[55%]  rounded-4xl overflow-hidden flex flex-col justify-end items-center pb-10 gap-2 bg-[url('/src/assets/activity/img_4.png')] bg-center bg-cover bg-no-repeat">
@@ -107,14 +107,12 @@ function Activity() {
                                 créativité se rencontrent dans un cadre
                                 enchanteur.
                             </p>
-                            <div className="w-full border-2 p-3 border-[#4097FF] mt-3 rounded-full flex justify-center items-center gap-10">
+                            <Button width="100%" borderColor={"#4097FF"}>
                                 <h4 className=" text-[#4097FF] text-xs font-bold">
-                                    Consulter la liste des meilleurs restaurants
+                                    Consulter la liste des sentiers pédestres
                                 </h4>
-                                <div className="w-7 h-7 border-2 border-[#4097FF] text-[#4097FF] rounded-full  text-xs font-bold flex justify-center items-center">
-                                    {">"}
-                                </div>
-                            </div>
+                                <ButtonNext size={7} color={"#4097FF"} />
+                            </Button>
                         </div>
                     </div>
                 </div>

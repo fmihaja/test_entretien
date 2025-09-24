@@ -1,10 +1,15 @@
+import Button from "../components/Button";
+import ButtonNext from "../components/ButtonNext";
+
 function Contact() {
     return (
         <div className="relative min-h-screen text-white bg-[url('/src/assets/contact/bgImg.png')] bg-center bg-cover bg-no-repeat flex flex-col">
             <div className="absolute inset-0 bg-gradient-to-br from-[#4097FF] to-[#73737300]"></div>
-            
+
             <div className="relative z-10 flex-1 flex flex-col justify-center items-center gap-5 px-4">
-                <h2 className="text-6xl font-normal p-2 text-center">Réservations</h2>
+                <h2 className="text-6xl font-normal p-2 text-center">
+                    Réservations
+                </h2>
                 <p className="text-center w-full md:w-[60%] text-lg">
                     <span className="font-bold me-2">
                         Offrez-vous un séjour inoubliable
@@ -13,14 +18,12 @@ function Contact() {
                     exceptionnel, entre confort, détente et découvertes, au cœur
                     de Saint-Raphaël.
                 </p>
-                <div className="w-full md:w-[25%] p-3 bg-[#4097FF] mt-3 rounded-full flex justify-center items-center gap-10">
+                <Button bgColor={"#4097FF"} width={"25%"}>
                     <h4 className="text-white text-sm font-bold">
                         Consulter la liste des meilleurs restaurants
                     </h4>
-                    <div className="w-7 h-7 border-2 border-white text-white rounded-full text-xs font-bold flex justify-center items-center">
-                        {">"}
-                    </div>
-                </div>
+                    <ButtonNext size={7} color={"#FFFFFF"} />
+                </Button>
             </div>
 
             <div className="relative z-10 w-full bg-[#4097FF] py-8">

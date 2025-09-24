@@ -1,8 +1,9 @@
-
 // import './App.css'
+import Button from "../components/Button";
+
+import ButtonNext from "../components/ButtonNext";
 
 function Home() {
-
     return (
         <>
             <div className="w-screen h-screen">
@@ -74,7 +75,7 @@ function Home() {
                                 <h2 className="text-white text-6xl font-normal p-2">
                                     sur la Côte d’Azur !
                                 </h2>
-                                <p className="text-white p-4">
+                                <p className="text-white p-2 text-justify w-full mb-30">
                                     Blu Azur vous invite à découvrir le charme
                                     de Saint-Raphaël, une destination
                                     d’exception nichée entre Cannes et
@@ -87,14 +88,26 @@ function Home() {
                                     sérénité et élégance au cœur de la Riviera
                                     française!
                                 </p>
-                                <div className="h-15 mt-30 ms-4 border-2 border-white rounded-full text-2xl text-white flex justify-center items-center gap-30">
+                                <Button
+                                    width={"98%"}
+                                    otherStyle={"text-white border-white"}
+                                >
+                                    <h4 className="text-lg font-bold">
+                                        Réservez dès maintenant votre séjour !
+                                    </h4>
+                                    <ButtonNext
+                                        size={7}
+                                        otherStyle={"text-white border-white"}
+                                    />
+                                </Button>
+                                {/* <div className="h-15 mt-30 ms-4 border-2 border-white rounded-full text-2xl text-white flex justify-center items-center gap-30">
                                     <h4 className="text-lg font-bold">
                                         Réservez dès maintenant votre séjour !
                                     </h4>
                                     <div className="w-7 h-7 border-2 border-white rounded-full  text-white text-sm font-bold flex justify-center items-center">
                                         {">"}
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         {/* demo img */}
@@ -112,9 +125,12 @@ function Home() {
                                     alt=""
                                     srcset=""
                                 />
-                                <div className="absolute bottom-[40%] right-5 w-7 h-7 border-2 border-white rounded-full  text-white text-sm font-bold flex justify-center items-center">
-                                    {">"}
-                                </div>
+                                <ButtonNext
+                                    size={7}
+                                    otherStyle={
+                                        "absolute bottom-[40%] right-5 text-white border-white"
+                                    }
+                                />
                             </div>
                         </div>
                     </div>

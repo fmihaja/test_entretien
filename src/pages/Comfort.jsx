@@ -1,3 +1,5 @@
+import ButtonNext from "../components/ButtonNext";
+
 function Comfort() {
     return (
         <>
@@ -54,9 +56,7 @@ function Comfort() {
                             alt=""
                             srcset=""
                         />
-                        <div className="absolute bottom-[50%] right-[30%] w-7 h-7 border-2 border-white rounded-full  text-white text-sm font-bold flex justify-center items-center">
-                            {">"}
-                        </div>
+                        <ButtonNext size={7} otherStyle={"absolute bottom-[50%] right-[30%] text-white border-white"}/>
                     </div>
                 </div>
             </div>
