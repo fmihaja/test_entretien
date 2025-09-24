@@ -1,3 +1,5 @@
+import LocationCard from "../components/location/LocationCard";
+
 function Location() {
     return (
         <>
@@ -16,91 +18,38 @@ function Location() {
                 </p>
                 {/* contenu en card */}
                 <div className="w-full flex  justify-center items-center flex-wrap gap-40 my-20">
-                    <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="w-30 h-30 rounded-full bg-white flex justify-center items-center">
-                            <img
-                                src="/src/assets/location/swim.png"
-                                className="w-1/2 h-auto"
-                                alt=""
-                                srcset=""
-                            />
-                        </div>
-                        <p className="text-white text-center w-25 h-50">
-                            Sports nautiques, plongée, voile
-                        </p>
-                    </div>
-                    <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="w-30 h-30 rounded-full bg-white flex justify-center items-center">
-                            <img
-                                src="/src/assets/location/ride.png"
-                                className="w-1/2 h-auto"
-                                alt=""
-                                srcset=""
-                            />
-                        </div>
-                        <p className="text-white text-center w-25 h-50">
-                            Randonnées et vélo
-                            <br />
-                            dans l’Estérel
-                        </p>
-                    </div>
-                    <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="w-30 h-30 rounded-full bg-white flex justify-center items-center">
-                            <img
-                                src="/src/assets/location/casino.png"
-                                className="w-1/2 h-auto"
-                                alt=""
-                                srcset=""
-                            />
-                        </div>
-                        <p className="text-white text-center w-25 h-50">
-                            Casino <br />
-                            et vie
-                            <br />
-                            nocturne animée
-                        </p>
-                    </div>
-                    <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="w-30 h-30 rounded-full bg-white flex justify-center items-center">
-                            <img
-                                src="/src/assets/location/village.png"
-                                className="w-1/2 h-auto"
-                                alt=""
-                                srcset=""
-                            />
-                        </div>
-                        <p className="text-white text-center w-25 h-50">
-                            Villages perchés et
-                            <br />
-                            marchés provençaux
-                        </p>
-                    </div>
-                    <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="w-30 h-30 rounded-full bg-white flex justify-center items-center">
-                            <img
-                                src="/src/assets/location/golf.png"
-                                className="w-1/2 h-auto"
-                                alt=""
-                                srcset=""
-                            />
-                        </div>
-                        <p className="text-white text-center w-25 h-50">
-                            Un paradis pour les golfeurs
-                        </p>
-                    </div>
-                    <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="w-30 h-30 rounded-full bg-white flex justify-center items-center">
-                            <img
-                                src="/src/assets/location/mountains.png"
-                                className="w-1/2 h-auto"
-                                alt=""
-                                srcset=""
-                            />
-                        </div>
-                        <p className="text-white text-center w-25 h-50">
-                            Montagne et vélo de route
-                        </p>
-                    </div>
+                    <LocationCard
+                        srcImg="swim"
+                        desc="Sports nautiques, plongée, voile"
+                    />
+                    <LocationCard
+                        srcImg="ride"
+                        desc={" Randonnées et vélo" + "\n" + "dans l’Estérel"}
+                    />
+                    <LocationCard
+                        srcImg="casino"
+                        desc={
+                            "Casino " +
+                            "\n" +
+                            "et vie" +
+                            "\n" +
+                            "nocturne animée"
+                        }
+                    />
+                    <LocationCard
+                        srcImg="village"
+                        desc={
+                            " Villages perchés et" + "\n" + "marchés provençaux"
+                        }
+                    />
+                    <LocationCard
+                        srcImg="golf"
+                        desc="Un paradis pour les golfeurs"
+                    />
+                    <LocationCard
+                        srcImg="mountains"
+                        desc="Montagne et vélo de route"
+                    />
                 </div>
                 <p className="text-white text-center w-1/2">
                     Flânez sur la Promenade des Bains, explorez les criques
