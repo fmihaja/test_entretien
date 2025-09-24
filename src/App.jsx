@@ -16,6 +16,7 @@ function App() {
             <Discovery />
             <Activity />
             <Contact />
+            
         </>
     );
 }
