@@ -14,7 +14,7 @@ function Contact() {
                     de Saint-Raphaël.
                 </p>
                 <div className="w-full md:w-[25%] p-3 bg-[#4097FF] mt-3 rounded-full flex justify-center items-center gap-10">
-                    <h4 className="text-white text-xs font-bold">
+                    <h4 className="text-white text-sm font-bold">
                         Consulter la liste des meilleurs restaurants
                     </h4>
                     <div className="w-7 h-7 border-2 border-white text-white rounded-full text-xs font-bold flex justify-center items-center">

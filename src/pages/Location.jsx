@@ -15,7 +15,7 @@ function Location() {
                     elle offre un cadre idyllique pour la détente et l’aventure.
                 </p>
                 {/* contenu en card */}
-                <div className="w-full flex  justify-center items-center gap-40 my-20">
+                <div className="w-full flex  justify-center items-center flex-wrap gap-40 my-20">
                     <div className="flex flex-col justify-center items-center gap-3">
                         <div className="w-30 h-30 rounded-full bg-white flex justify-center items-center">
                             <img
