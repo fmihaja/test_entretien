@@ -7,6 +7,7 @@ body,
 #root {
   height: 100%;
   font-family: 'Mulish', sans-serif;
+  overflow-x: hidden;
 }
 
 /* Reste de votre CSS... */
