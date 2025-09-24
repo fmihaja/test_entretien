@@ -1,6 +1,3 @@
-import Comfort from "./pages/Comfort";
-import Home from "./pages/Home";
-import Location from "./pages/Location";
 
 function GMap() {
     return (
@@ -9,10 +6,10 @@ function GMap() {
                 {/* contenu principal */}
                 <div className="w-[80%] flex flex-col justify-start">
                     <h3 className="text-5xl mb-2">
-                        Le confort et la sérénité d’un
+                        Où se trouve Blu Azur à 
                     </h3>
                     <h3 className="text-5xl font-bold mb-5">
-                        appartement privé
+                        Saint-Raphaël ?
                     </h3>
                     <p className="w-[41%] mb-10 ">
                         <span className="font-bold">
@@ -52,18 +49,6 @@ function GMap() {
                         <img src="/src/assets/googleMaps/img_3.png" alt="" srcset="" className="absolute top-[30%] left-1/2 w-20 h-auto" />
 
                     </div>
-
-                    {/* <div className="w-[40%] relative h-full flex justify-center items-center">
-                        <img
-                            src="/src/assets/comfort/img_2.png"
-                            className="w-full h-auto"
-                            alt=""
-                            srcset=""
-                        />
-                        <div className="absolute bottom-[50%] right-[30%] w-7 h-7 border-2 rounded-full  text-sm font-bold flex justify-center items-center">
-                            {">"}
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </>

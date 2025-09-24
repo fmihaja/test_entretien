@@ -1,46 +1,33 @@
-import Comfort from "./pages/Comfort";
-import Home from "./pages/Home";
-import Location from "./pages/Location";
-
 function App() {
     return (
         <>
-            <div className="w-screen h-screen relative bg-[url('/src/assets/googleMaps/bgImg.png')] bg-center bg-cover bg-no-repeat flex justify-center items-center">
+            <div className="w-screen h-screen relative bg-[url('/src/assets/discovery/bgImg.png')] bg-center bg-cover bg-no-repeat flex justify-end items-center">
                 {/* contenu principal */}
-                <div className="w-[80%] flex flex-col justify-start">
-                    <h3 className="text-5xl mb-2">
-                        Le confort et la sérénité d’un
+                <div className="w-[50%] flex flex-col justify-start text-white">
+                    <h3 className="text-5xl mb-2 w-[75%] text-end">
+                        Un point de départ idéal
                     </h3>
-                    <h3 className="text-5xl font-bold mb-5">
-                        appartement privé
-                    </h3>
-                    <p className="w-[41%] mb-10 ">
+                    <h3 className="w-[75%] text-5xl mb-5 text-end">
+                        pour{" "}
                         <span className="font-bold">
-                            Blu Azur est idéalement situé entre Saint-Tropez et
-                            Cannes, au cœur de l’une des plus belles stations
-                            balnéaires de France.
-                        </span>{" "}
-                        Nos appartements se trouvent dans un domaine privé
-                        sécurisé, entouré de verdure, à quelques minutes à pied
-                        de la plage sablonneuse de Santa Lucia et de la marina.
-                        Proche du centre-ville de Saint-Raphaël, la résidence
-                        permet un accès facile aux boutiques, restaurants et
-                        animations locales. Une station d’arrêt d’autobus est
-                        située à la sortie du site, facilitant les déplacements,
-                        et une boulangerie à proximité vous offre du pain frais
-                        chaque matin pour bien commencer la journée.
+                            découvrir la Côte d’Azur !
+                        </span>
+                    </h3>
+                    <p className="w-[75%] mb-10 text-justify ps-10">
+                        Entre mer et montagne, Saint-Raphaël est une destination
+                        idéale pour les amateurs de plein air et de découvertes.
+                        Randonnées dans le Massif de l’Estérel, sports nautiques
+                        sur les eaux cristallines de la Méditerranée, balades en
+                        bateau vers les îles de Lérins ou encore golf et
+                        cyclisme sur des parcours panoramiques, chaque journée
+                        offre son lot d’aventures. Entre marchés provençaux,
+                        villages perchés et animations locales, l’art de vivre
+                        azuréen se dévoile à chaque instant, faisant de
+                        Saint-Raphaël un lieu vibrant et inoubliable. 
                     </p>
-                    <div className="w-[25%] border-2 p-3 border-[#4097FF] mt-3 rounded-full flex justify-center items-center gap-30">
-                        <h4 className=" text-[#4097FF] text-lg font-bold">
-                            Comment s’y rendre ?
-                        </h4>
-                        <div className="w-7 h-7 border-2 border-[#4097FF] text-[#4097FF] rounded-full  text-sm font-bold flex justify-center items-center">
-                            {">"}
-                        </div>
-                    </div>
                 </div>
                 {/* carousel img */}
-                <div className="absolute bottom-[15%] right-1 w-[50%] h-[70%]  flex justify-center items-center gap-3 overflow-hidden">
+                {/* <div className="absolute bottom-[15%] right-1 w-[50%] h-[70%]  flex justify-center items-center gap-3 overflow-hidden">
                     <div className="relative w-[50%] h-auto rounded-2xl">
                         <img
                             src="/src/assets/googleMaps/img_1.png"
@@ -48,23 +35,20 @@ function App() {
                             alt=""
                             srcset=""
                         />
-                        <img src="/src/assets/googleMaps/img_2.png" alt="" srcset="" className="absolute -top-10 -left-10 w-20 h-auto" />
-                        <img src="/src/assets/googleMaps/img_3.png" alt="" srcset="" className="absolute top-[30%] left-1/2 w-20 h-auto" />
-
-                    </div>
-
-                    {/* <div className="w-[40%] relative h-full flex justify-center items-center">
                         <img
-                            src="/src/assets/comfort/img_2.png"
-                            className="w-full h-auto"
+                            src="/src/assets/googleMaps/img_2.png"
                             alt=""
                             srcset=""
+                            className="absolute -top-10 -left-10 w-20 h-auto"
                         />
-                        <div className="absolute bottom-[50%] right-[30%] w-7 h-7 border-2 rounded-full  text-sm font-bold flex justify-center items-center">
-                            {">"}
-                        </div>
-                    </div> */}
-                </div>
+                        <img
+                            src="/src/assets/googleMaps/img_3.png"
+                            alt=""
+                            srcset=""
+                            className="absolute top-[30%] left-1/2 w-20 h-auto"
+                        />
+                    </div>
+                </div> */}
             </div>
         </>
     );
