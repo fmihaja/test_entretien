@@ -1,113 +1,70 @@
+import Comfort from "./pages/Comfort";
+import Home from "./pages/Home";
+import Location from "./pages/Location";
+
 function App() {
     return (
         <>
-            <div className="w-screen h-screen bg-[url('/src/assets/location/bgImg.png')] bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center">
-                <h3 className="text-white text-5xl mb-2">
-                    Saint Raphaël, l’endroit parfait pour
-                </h3>
-                <h3 className="text-white text-5xl font-bold mb-5">
-                    vivre la Côte d’Azur
-                </h3>
-                <p className="w-[41%] text-center text-white mb-10">
-                    Avec ses plages dorées, ses 300 jours de soleil et ses
-                    calanques sauvages, Saint-Raphaël est une destination de
-                    rêve. Entre mer turquoise et rochers rouges de l’Estérel,
-                    elle offre un cadre idyllique pour la détente et l’aventure.
-                </p>
-                {/* contenu en card */}
-                <div className="w-full flex  justify-center items-center gap-40 my-20">
-                    <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="w-30 h-30 rounded-full bg-white flex justify-center items-center">
-                            <img
-                                src="/src/assets/location/swim.png"
-                                className="w-1/2 h-auto"
-                                alt=""
-                                srcset=""
-                            />
+            <div className="w-screen h-screen relative bg-[url('/src/assets/googleMaps/bgImg.png')] bg-center bg-cover bg-no-repeat flex justify-center items-center">
+                {/* contenu principal */}
+                <div className="w-[80%] flex flex-col justify-start">
+                    <h3 className="text-5xl mb-2">
+                        Le confort et la sérénité d’un
+                    </h3>
+                    <h3 className="text-5xl font-bold mb-5">
+                        appartement privé
+                    </h3>
+                    <p className="w-[41%] mb-10 ">
+                        <span className="font-bold">
+                            Blu Azur est idéalement situé entre Saint-Tropez et
+                            Cannes, au cœur de l’une des plus belles stations
+                            balnéaires de France.
+                        </span>{" "}
+                        Nos appartements se trouvent dans un domaine privé
+                        sécurisé, entouré de verdure, à quelques minutes à pied
+                        de la plage sablonneuse de Santa Lucia et de la marina.
+                        Proche du centre-ville de Saint-Raphaël, la résidence
+                        permet un accès facile aux boutiques, restaurants et
+                        animations locales. Une station d’arrêt d’autobus est
+                        située à la sortie du site, facilitant les déplacements,
+                        et une boulangerie à proximité vous offre du pain frais
+                        chaque matin pour bien commencer la journée.
+                    </p>
+                    <div className="w-[25%] border-2 p-3 border-[#4097FF] mt-3 rounded-full flex justify-center items-center gap-30">
+                        <h4 className=" text-[#4097FF] text-lg font-bold">
+                            Comment s’y rendre ?
+                        </h4>
+                        <div className="w-7 h-7 border-2 border-[#4097FF] text-[#4097FF] rounded-full  text-sm font-bold flex justify-center items-center">
+                            {">"}
                         </div>
-                        <p className="text-white text-center w-25 h-50">
-                            Sports nautiques, plongée, voile
-                        </p>
-                    </div>
-                    <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="w-30 h-30 rounded-full bg-white flex justify-center items-center">
-                            <img
-                                src="/src/assets/location/ride.png"
-                                className="w-1/2 h-auto"
-                                alt=""
-                                srcset=""
-                            />
-                        </div>
-                        <p className="text-white text-center w-25 h-50">
-                            Randonnées et vélo
-                            <br />
-                            dans l’Estérel
-                        </p>
-                    </div>
-                    <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="w-30 h-30 rounded-full bg-white flex justify-center items-center">
-                            <img
-                                src="/src/assets/location/casino.png"
-                                className="w-1/2 h-auto"
-                                alt=""
-                                srcset=""
-                            />
-                        </div>
-                        <p className="text-white text-center w-25 h-50">
-                            Casino <br />
-                            et vie
-                            <br />
-                            nocturne animée
-                        </p>
-                    </div>
-                    <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="w-30 h-30 rounded-full bg-white flex justify-center items-center">
-                            <img
-                                src="/src/assets/location/village.png"
-                                className="w-1/2 h-auto"
-                                alt=""
-                                srcset=""
-                            />
-                        </div>
-                        <p className="text-white text-center w-25 h-50">
-                            Villages perchés et
-                            <br />
-                            marchés provençaux
-                        </p>
-                    </div>
-                    <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="w-30 h-30 rounded-full bg-white flex justify-center items-center">
-                            <img
-                                src="/src/assets/location/golf.png"
-                                className="w-1/2 h-auto"
-                                alt=""
-                                srcset=""
-                            />
-                        </div>
-                        <p className="text-white text-center w-25 h-50">
-                            Un paradis pour les golfeurs
-                        </p>
-                    </div>
-                    <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="w-30 h-30 rounded-full bg-white flex justify-center items-center">
-                            <img
-                                src="/src/assets/location/mountains.png"
-                                className="w-1/2 h-auto"
-                                alt=""
-                                srcset=""
-                            />
-                        </div>
-                        <p className="text-white text-center w-25 h-50">
-                            Montagne et vélo de route
-                        </p>
                     </div>
                 </div>
-                <p className="text-white text-center w-1/2">
-                    Flânez sur la Promenade des Bains, explorez les criques
-                    secrètes ou partez en mer depuis son port de plaisance.
-                    Saint-Raphaël, c’est la Côte d’Azur dans toute sa splendeur
-                    !
-                </p>
+                {/* carousel img */}
+                <div className="absolute bottom-[15%] right-1 w-[50%] h-[70%]  flex justify-center items-center gap-3 overflow-hidden">
+                    <div className="relative w-[50%] h-auto rounded-2xl">
+                        <img
+                            src="/src/assets/googleMaps/img_1.png"
+                            className="w-[90%] h-auto"
+                            alt=""
+                            srcset=""
+                        />
+                        <img src="/src/assets/googleMaps/img_2.png" alt="" srcset="" className="absolute -top-10 -left-10 w-20 h-auto" />
+                        <img src="/src/assets/googleMaps/img_3.png" alt="" srcset="" className="absolute top-[30%] left-1/2 w-20 h-auto" />
+
+                    </div>
+
+                    {/* <div className="w-[40%] relative h-full flex justify-center items-center">
+                        <img
+                            src="/src/assets/comfort/img_2.png"
+                            className="w-full h-auto"
+                            alt=""
+                            srcset=""
+                        />
+                        <div className="absolute bottom-[50%] right-[30%] w-7 h-7 border-2 rounded-full  text-sm font-bold flex justify-center items-center">
+                            {">"}
+                        </div>
+                    </div> */}
+                </div>
             </div>
         </>
     );
